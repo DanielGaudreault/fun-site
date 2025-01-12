@@ -1,15 +1,24 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   text-align: center;
-  background-color: #f4f4f4;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
 header {
-  background-color: #333;
+  background: #333;
   color: white;
   padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 main {
@@ -19,36 +28,103 @@ main {
 section {
   margin-bottom: 30px;
   padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  color: #ff6f61;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
 }
 
 button {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
-  background-color: #333;
+  border-radius: 25px;
+  background: #ff6f61;
   color: white;
   margin: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #555;
+  background: #ff4a3d;
+  transform: scale(1.05);
 }
 
 input {
   padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  font-size: 1rem;
+  border: 2px solid #ff6f61;
+  border-radius: 25px;
+  width: 80%;
+  max-width: 200px;
+  margin: 10px;
 }
 
 footer {
   margin-top: 30px;
-  padding: 10px;
-  background-color: #333;
+  padding: 15px;
+  background: #333;
   color: white;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+  color: white;
+}
+
+/* Specific Section Styles */
+#joke-section {
+  background: #f8f8f8;
+}
+
+#fact-section {
+  background: #f0f8ff;
+}
+
+#game-section {
+  background: #fff3e6;
+}
+
+#share-section {
+  background: #e6f9ff;
+}
+
+/* Game Result Styles */
+#game-result {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6f61;
+  margin-top: 10px;
+}
+
+/* Share Buttons */
+#share-twitter {
+  background: #1da1f2;
+}
+
+#share-twitter:hover {
+  background: #1991db;
+}
+
+#share-facebook {
+  background: #1877f2;
+}
+
+#share-facebook:hover {
+  background: #166fe5;
 }
