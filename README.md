@@ -24,3 +24,4 @@ Welcome to the **Fun & Entertainment Site**! This is a simple website designed t
 ---
 
 ## File Structure
+https://danielgaudreault.github.io/fun-site/
